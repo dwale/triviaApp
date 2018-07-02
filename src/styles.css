@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.body {
+  background-color: #0d47a1;
+}
+.mat-progress-bar-buffer {
+  background-color: #f4f4f8;
+}
+.mat-progress-bar-fill::after {
+  background-color: #ff4081;
+}
