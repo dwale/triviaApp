@@ -1,20 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { MaterialModule } from './shared/material/material.module';
+import {FormsModule} from '@angular/forms';
+import {TriviaHomeComponent} from './trivia-home/trivia-home.component';
+import {MatToolbarModule} from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TriviaHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MaterialModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

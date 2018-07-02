@@ -1,0 +1,16 @@
+<mat-card class="example-card" style="width: 900px;">
+  <mat-card-header >
+    <img src="../../assets/images/logo.jpg" alt="Avatar" style="width: 100px; height: 90px" >
+  </mat-card-header>
+  <mat-card-content   style="width: 100%">
+    <mat-progress-bar [style.display]="showSpinner ? 'block' : 'none'" mode="indeterminate" style="color: hotpink"></mat-progress-bar>
+    <div class="triviaContent">
+    <p style="">
+
+      Take a look at the Angular Material Documentation for components. Let's say we want to start off by integrating a toolbar.    </p>
+    </div>
+  </mat-card-content >
+  <mat-card-actions>
+    <button mat-raised-button color="accent" (click)="getTrivias()" style="margin-left: 80%; margin-bottom: 10px">NEXT</button>
+  </mat-card-actions>
+</mat-card>
