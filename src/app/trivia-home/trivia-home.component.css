@@ -7,14 +7,20 @@ body {
 }
 .example-card {
   max-width: 600px;
-  margin-left: 33%;
-  margin-top: 10%;
+  margin-left: 28%;
+  margin-top: 7%;
   min-height: 400px;
   padding-left: 40px;
   padding-right: 40px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-
+.triviaContent {
+  min-height: 90%;
+}
+.mat-progress-bar-fill::after {
+  background-color: black;
+}
 
 .upper {
 

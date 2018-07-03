@@ -19,7 +19,7 @@ import {MatToolbarModule} from '@angular/material';
     BrowserAnimationsModule,
     MatToolbarModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
