@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import {TriviaHomeComponent} from './trivia-home/trivia-home.component';
 import {MatToolbarModule} from '@angular/material';
 
+
 @NgModule({
   declarations: [
     AppComponent,

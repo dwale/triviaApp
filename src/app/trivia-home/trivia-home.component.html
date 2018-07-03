@@ -1,12 +1,15 @@
 
 <mat-card class="example-card mat-elevation-z11" >
-  <mat-card-header  >
-
-    <img src="../../assets/images/logo.jpg" alt="Avatar" style="width: 100px; height: 100px; margin-left: 35%" >
+  <div class="Pbar">
+  <mat-progress-bar  [style.display]="showSpinner ? 'block' : 'none'" mode="indeterminate"></mat-progress-bar>
+  </div>
+  <mat-card-header class="header" >
+    <img src="../../assets/images/logo.jpg" alt="Avatar" style="width: 100px; height: 100px; margin-left: 38%" >
   </mat-card-header>
-  <mat-card-content   style="width: 100%">
-    <mat-progress-bar  [style.display]="showSpinner ? 'block' : 'none'" mode="indeterminate"></mat-progress-bar>
-    <div class="triviaContent">
+
+  <mat-card-content  class="triviaContent" style="width: 100%">
+    <p class="subtitle" style="margin-top: 60px"> Do you know that?</p>
+    <div >
     <p style="">
 
       {{this.trivia}}   </p>
