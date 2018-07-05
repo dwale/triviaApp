@@ -1,5 +1,6 @@
 
 .example-card {
+  position: absolute;
   max-width: 600px;
   margin-left: 31%;
   margin-top: 7%;
