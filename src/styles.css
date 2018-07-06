@@ -1,4 +1,13 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body{
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 canvas {
+  width: 100%;
+  height: 100%;
   display:block;
   background: rgb(33,36,50);
   position: fixed;
@@ -40,3 +49,9 @@ a:hover,
 a:focus {
   color:green;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+

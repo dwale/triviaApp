@@ -2,7 +2,8 @@
 .example-card {
   position: absolute;
   max-width: 600px;
-  margin-left: 31%;
+  min-width: 600px;
+  margin-left: 28%;
   margin-top: 7%;
   min-height: 400px;
   padding-left: 40px;

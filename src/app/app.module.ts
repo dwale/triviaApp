@@ -7,7 +7,7 @@ import { MaterialModule } from './shared/material/material.module';
 import {FormsModule} from '@angular/forms';
 import {TriviaHomeComponent} from './trivia-home/trivia-home.component';
 import {MatToolbarModule} from '@angular/material';
-
+console.log('GGGGGGGGG');
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,4 +24,5 @@ import {MatToolbarModule} from '@angular/material';
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

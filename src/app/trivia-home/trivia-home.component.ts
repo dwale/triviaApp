@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { MaterialModule } from '../shared/material/material.module';
+
 // declare var particlesJS: any;
 
 
@@ -29,6 +31,8 @@ export class TriviaHomeComponent implements OnInit {
         console.log('Trivia', response);
         this.trivia = response;
         if (this.trivia !== null) {
+          this.showSpinner = false;
+        } else {
           this.showSpinner = false;
         }
       });
