@@ -1,4 +1,5 @@
 # TriviaApp
+Particle.js was used for the background of this application and the trivia was gotten from http://numbersapi.com API  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
