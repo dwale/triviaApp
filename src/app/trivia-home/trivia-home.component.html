@@ -1,21 +1,61 @@
 
-<mat-card class="example-card mat-elevation-z11" >
-  <div class="Pbar"></div>
-  <mat-progress-bar [style.display]="showSpinner ? 'block' : 'none'" mode="indeterminate"></mat-progress-bar>
+<!--<mat-card class="example-card mat-elevation-z11" >-->
+  <!--<div class="Pbar"></div>-->
+  <!--<mat-progress-bar [style.display]="showSpinner ? 'block' : 'none'" mode="indeterminate"></mat-progress-bar>-->
 
-  <mat-card-header class="header" >
-    <img src="../../assets/images/logo.jpg" alt="Avatar" style="width: 100px; height: 100px; margin-left: 38%" >
-  </mat-card-header>
+  <!--<mat-card-header class="header" >-->
+    <!--<img src="../../assets/images/logo.jpg" alt="Avatar" style="width: 100px; height: 100px; margin-left: 38%" >-->
+  <!--</mat-card-header>-->
 
-  <mat-card-content  class="triviaContent" style="width: 100%">
-    <p class="subtitle" style="margin-top: 60px"> Do you know that?</p>
-    <div >
-    <p style="">
-      {{this.trivia}}
-    </p>
+  <!--<mat-card-content  class="triviaContent" style="width: 100%">-->
+    <!--<p class="subtitle" style="margin-top: 60px"> Do you know that?</p>-->
+    <!--<div >-->
+    <!--<p style="">-->
+      <!--{{this.trivia}}-->
+    <!--</p>-->
+    <!--</div>-->
+  <!--</mat-card-content >-->
+  <!--<mat-card-actions>-->
+    <!--<button mat-raised-button color="accent" (click)="getTrivias()" style="margin-left: 80%; margin-bottom: 10px; background-color: #e94e77; color: white">NEXT</button>-->
+  <!--</mat-card-actions>-->
+<!--</mat-card>-->
+
+  <div id="particles-js">
+  <div class="container-login100 animated fadeIn">
+    <div class="wrap-login100">
+      <div class="login100-pic js-tilt" data-tilt>
+        <img src="../../assets/images/logo.jpg" alt="IMG">
+      </div>
+
+      <form class="login100-form validate-form">
+					<span class="login100-form-title">
+            <span style="color: #9053c7">Trivia</span> Zone
+          </span>
+
+        <span class="login100-form-title">
+        {{this.trivia}}
+          </span>
+        <span class="login100-form-title" *ngIf="showSpinner">
+          <div class="loader" >
+            <div class="dot dot1"><i></i></div>
+            <div class="dot dot2"><i></i></div>
+            <div class="dot dot3"><i></i></div>
+            <div class="dot dot4"><i></i></div>
+            <div class="dot dot5"><i></i></div>
+            <div class="dot dot6"><i></i></div>
+            <div class="dot dot7"><i></i></div>
+            <div class="dot dot8"><i></i></div>
+            <div class="dot dot9"><i></i></div>
+          </div>
+        </span>
+
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" (click)="getTrivias()" >
+            Next
+          </button>
+        </div>
+      </form>
     </div>
-  </mat-card-content >
-  <mat-card-actions>
-    <button mat-raised-button color="accent" (click)="getTrivias()" style="margin-left: 80%; margin-bottom: 10px; background-color: #e94e77; color: white">NEXT</button>
-  </mat-card-actions>
-</mat-card>
+  </div>
+</div>
+

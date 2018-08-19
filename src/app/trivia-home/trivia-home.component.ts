@@ -19,11 +19,12 @@ export class TriviaHomeComponent implements OnInit {
   }
   ngOnInit() {
     this.getTrivias();
-    this.showSpinner = false;
+    this.showSpinner = true;
 
   }
 
   getTrivias() {
+    this.trivia = '';
     this.showSpinner = true;
     this.httpClient.get('http://numbersapi.com/random/trivia', {responseType: 'text'
   } )
